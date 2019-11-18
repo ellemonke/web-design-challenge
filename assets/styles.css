@@ -1,0 +1,337 @@
+/* Main Template and Homepage */
+body, .container {
+    background-color: #ededed;
+    color: #666;
+    height: 100%;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+    color: #1FACA5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Header Row */
+header {
+    background-color: #fff;
+}
+
+header h3 {
+    display: inline-block;
+    background-color: #1FACA5;
+    margin-bottom: 0;
+    margin-left: 70px;
+    padding: 15px 15px;
+    color: white;
+}
+
+header h3 a, header h3 a:hover {
+    color: #fff;
+}
+
+/* Header Navigation */
+header nav {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    background-color: #fff;
+}
+header ul {
+    margin-bottom: 0;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav a, header nav a:hover {
+    color: #666;
+}
+
+/* Dropdown Menu */
+header .dropdown a.btn {
+    border: none;
+    padding: 15px;
+    color: #666;
+    font-size: 1em;
+    margin-top: -2px;
+}
+
+header .dropdown a.btn:hover {
+    text-decoration: underline;
+}
+
+header .dropdown a.btn:focus {
+    background-color: #e7e7e7;
+    border-radius: 0;
+    outline: none !important;
+    box-shadow: none;
+    color: #333;
+ }
+
+header .dropdown .dropdown-menu {
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    font-size: 1em;
+}
+
+header .dropdown a.dropdown-item {
+    border: none;
+    padding: 2px 20px;
+    color: #333;
+}
+
+header .dropdown a:hover.dropdown-item {
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: underline;
+}
+
+/* Small Screen Hamburger Nav */
+header nav.nav-sm {
+    visibility: hidden;
+}
+/* plate */
+header nav.navbar {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    padding: 0;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    background-color: #1FACA5;
+}
+/* buns */
+header nav.nav-sm button.navbar-toggler {
+    padding: 2px 7px;
+    outline: none !important;
+}
+/* fillings */
+header nav.nav-sm span.navbar-toggler-icon {
+    width: 30px;
+}
+/* dropdown */
+header nav.nav-sm .collapse nav {
+    position: absolute;
+    left: 0;
+    border: 1px solid black;
+    width: 100%;
+}
+
+header nav.nav-sm .collapse li{
+    display: block;
+}
+
+/* Main Content */
+#main-content {
+    padding: 50px;
+}
+
+section {
+    background-color: #fff;
+}
+
+section h3 {
+    font-size: 1.2em;
+}
+
+section a, section a:hover {
+    color: #1FACA5;
+}
+
+section hr {
+    margin: 30px 0;
+}
+
+section p {
+    line-height: 1.8em;
+}
+
+/* One Column Template */
+.col-single {
+    padding: 50px;
+    margin: auto 50px 100px 50px;
+}
+
+.col-single p {
+    padding-bottom: 30px;
+    margin-top: -12px;
+}
+
+.col-single .img-container h3 {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.col-single .img-container hr {
+    visibility: hidden;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.col-single .img-container img {
+    width: 100%;
+}
+
+.col-single table {
+    margin-top: -25px;
+    text-align: right;
+    width: 100%;
+}
+
+.col-single th {
+    border-top: 0;
+}
+
+.col-single td {
+    padding: 7px;
+}
+
+/* Two Column Template */
+/* Left Column */
+.col-left {
+    margin-right: 30px;
+    padding: 50px 30px;
+    margin-bottom: 100px;
+}
+
+.col-left img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+img.full-width {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin: 0 20px 20px 20px;
+}
+
+/* Right Column */
+.col-right {
+    padding: 50px 30px;
+    margin-bottom: 100px;
+}
+
+.col-right h2 {
+    font-size: 1.7em;
+}
+
+.col-right .img-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.col-right img {
+    width: 140px;
+    height: 140px;
+}
+
+.col-right a {
+    border: 2px solid #fff;
+}
+
+.col-right a.active, .col-right a:hover {
+    border-color: #1FACA5;
+}
+
+/* Footer */
+footer {
+    background-color: #666;
+    border-top: 6px solid #1FACA5;
+    padding: 17px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+footer p {
+    margin: auto;
+}
+
+/* Media Queries for Responsive CSS */
+/* col-lg */
+@media (max-width:992px) {
+    .col-left {
+        margin-bottom: 0;
+    }
+
+    .col-right {
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+}
+
+/* col-md */
+@media (max-width:768px) {
+    .col-single .img-container hr {
+        visibility: visible;
+        margin: 10px 0;
+    }
+
+    .col-single .img-container img {
+        margin-bottom: 15px;
+    }
+}
+
+/* col-sm */
+@media (max-width:576px) {
+    header {
+        background-color: #1FACA5;
+    }
+
+    header h3 {
+        margin-left: 15px;
+        font-size: 1.7em;
+        margin-bottom: 0;
+    }
+
+    /* Hamburger Nav */
+    header nav.nav-sm {
+        visibility: visible;
+    }
+
+    /* Dropdown */
+    header nav.collapse, header nav.collapse li {
+        position: relative;
+        left: 0;
+        top: 2px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    header .dropdown a.btn {
+        margin-left: -30px;
+        margin-bottom: -15px;
+        padding-left: 30px;
+        text-align: left;
+        width: 100%;
+    }
+
+    header .dropdown a.btn:focus {
+        background-color: #e7e7e7;
+    }
+
+    header .dropdown .dropdown-menu {
+        box-shadow: none;
+        width: 70%;
+    }    
+
+    #main-content {
+        margin-top: 2px;
+        padding: 1px;
+    }
+
+    .col-single, .col-left, .col-right {
+        margin: 1px 0;
+    }
+
+    .col-single, .col-right {
+        margin-bottom: 65px;
+    }
+}
