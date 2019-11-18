@@ -115,12 +115,7 @@ header nav.nav-sm span.navbar-toggler-icon {
 header nav.nav-sm .collapse nav {
     position: absolute;
     left: 0;
-    border: 1px solid black;
     width: 100%;
-}
-
-header nav.nav-sm .collapse li{
-    display: block;
 }
 
 /* Main Content */
